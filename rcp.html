@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+
+	<style>
+*{margin: 0;}
+
+.one {
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:500px;
+  width:100%;
+
+}
+
+.one:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background: url("images/background-image2.2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.two{
+
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+ /* color: #fff;*/
+  height:350px;
+  width:100%;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .two{
+    height: auto;
+
+    }
+  }
+
+.two:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+.two .content{
+  /*padding-bottom: 5%;*/
+}
+
+.two .text h1{
+  color:black;
+  /*margin-left:-5%;*/
+}
+.two .text h3{
+ opacity: 0.8;
+  /*margin-left:-5%;*/
+}
+.two .text h3:hover{
+  opacity:1.0;
+}
+
+
+.text{
+  margin:0 15% 0 15%;
+  /*padding:10%;*/
+  padding:2%;
+}
+
+.text h1{
+  color:#00AAB9;;
+
+}
+.text p{
+  font-size:1.4em;
+  padding:2% 0 0 0;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .text {
+      margin:1%;
+    }
+    .text p{
+      font-size:1.0em;
+    }
+  }
+
+  .three{
+
+  position: relative;
+  display: inline-block;
+  /*padding: 1em 5em 1em 1em;*/
+  overflow: hidden;
+  color: #fff;
+  height:500px;
+  width:100%;
+
+}
+.three:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: top right;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  z-index: -1;
+  background:#DEEFF5;
+  /*background-repeat: no-repeat;
+  background-size: 100%*/;
+}
+
+.three .text h1{
+  color:black;
+}
+
+.three .text span{
+  color:#00AAB9;
+}
+
+	</style>
+</head>
+<body>
+<!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation" s>
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand" >Wiley Digital Archives <span></span></a>
+                    <a href="index.html" class="navbar-brand-short" >WDA <span></span></a>
+               </div>
+
+
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#about" class="smoothScroll" style = "color:#5b5b5b">Product</a></li>
+                         <!--  trying to make dropdown navigation bar, didn't work | update: worked perfectly! -->
+                         <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="#"style = "color:#5b5b5b">Collection <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                   <li><a href="#">The NEw York Academy of Sciences</a></li>
+                                   <li><a href="#">Royal Anthropological Institute <br> of Great Britain and Ireland</a></li>
+                                   <li><a href="#">Royal Geographical Society</a></li>
+                                    <li><a href="#">Become a partner</a></li>
+                              </ul>
+                         </li>
+                         <li><a href="#menu" class="smoothScroll" style = "color:#5b5b5b">Support</a></li>
+                         <li><a href="contact.html" class="smoothScroll" style = "color:#5b5b5b">Contact</a></li>
+                          <li><a href="slanted-solved.html" class="smoothScroll" style = "color:#5b5b5b">About Us </a></li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <!-- <li><a href="#"> Get Connected! <i class="fa fa-phone"></i> 010 020 0340</a></li> -->
+                         <a href="https://app.wileydigitalarchives.com/wiley/auth/pass;getIp=true" class="section-btn">Sign In</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+  <section id="angled" data-stellar-background-ratio="0.5">
+          <!-- <div class="overlay"></div> -->
+          <!-- <div class="container-fluid"> -->
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class ='one'></div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class = 'text'>
+                          <div class ='content'>
+                            <h1>RCP is the leading body for physicians <br> in the UK and internationally.</h1>
+                             <p>Founded in 1518 by a Royal Charter from King Henry VIII, the Royal College of Physicians of London (RCP) is the oldest medical college in England. The RCP is a professional membership body for physicians, with 34,000 members and fellows across the globe.<br><br> As the leading body for physicians in the UK and internationally, the Royal College of Physicians works to achieve their vision by influencing the way that healthcare is designed and delivered, promoting good health and leading the prevention of ill health across communities, and supporting physicians to fulfill their potential.</p><br>
+                             <a href="#footer" class="section-btn-next">Learn More</a><br><br>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                      <div class ='two'>
+                        <div class = 'text'>
+                              <h1>Our Collections:</h1>
+                              <div class="col-md-6 col-sm-12">
+                                <h3>Library of John Dee</h3> 
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <h3>William Harvey Collection</h3> 
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <h3> Women in Medicine</h3> 
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <h3>World Health (19thC Questionnaires)</h3> 
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <h3>Early Medical Textbooks</h3> 
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <h3> Non-Western Medical Texts</h3> 
+                              </div>                        
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                <!-- </div> -->
+              </section>
+
+
+
+
+
+
+<!-- 	<div class ='one'></div>
+  <div class = 'text'>
+    <div class ='content'>
+      <h1>By dog people, for dogs<br>
+        (and their people).</h1>
+        <p>At BARK, we want to make dogs as happy as they make us. Because dogs and humans are better together.<br>
+        That's why we're committed to creating the world's best products and experiences to satisfy each individual dog's distinct personality and preferences.</p>
+    </div>
+    
+  </div>
+  <div class ='two'></div> -->
+	
+          <!-- MENU-->
+     <section id="menu" data-stellar-background-ratio="0.5" style = "margin-top:-10%;">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Resources</h2>
+                              <h4>Post purchased use by Library</h4>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!- - MENU THUMB - ->
+                         <div class="menu-thumb">
+                              <a href="images/rcp/rcp1.jpg" class="image-popup" title="American Breakfast">
+                                   <img src="images/rcp/rcp1.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>WDA</h3>
+                                             <p>copy</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$25</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!- - MENU THUMB - ->
+                         <div class="menu-thumb">
+                              <a href="images/rcp/rcp2.jpg" class="image-popup" title="Self-made Salad">
+                                   <img src="images/rcp/rcp2.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>WDA</h3>
+                                             <p>Copt</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$18</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!- - MENU THUMB - ->
+                         <div class="menu-thumb">
+                              <a href="images/rcp/rcp3.jpg" class="image-popup" title="Chinese Noodle">
+                                   <img src="images/rcp/rcp3.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>WDA</h3>
+                                             <p>Copy</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$34</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!- - MENU THUMB - ->
+                         <div class="menu-thumb">
+                              <a href="images/rcp/rcp4.jpg" class="image-popup" title="Rice Soup">
+                                   <img src="images/rcp/rcp4.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>WDA</h3>
+                                             <p>Copy</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$28</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!- - MENU THUMB - ->
+                         <div class="menu-thumb">
+
+                          <!-- <a href = images/rcp/rcp.jpg>I'm clickable</a> -->
+                              <a href="images/rcp/rcp5.jpg" class="image-popup" title="Project title">
+                                   <img src="images/rcp/rcp5.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>WDA</h3>
+                                             <p>Copy</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$46</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+ 
+                    <div class="col-md-4 col-sm-6">
+                         <!- - MENU THUMB - ->
+                         <div class="menu-thumb">
+                              <a href="images/rcp/rcp6.jpg" class="image-popup" title="Project title">
+                                   <img src="images/rcp/rcp6.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>A letter from 1882 that mentions  Arthur Conan  Doyle's  medical Degree</h3>
+                                             <p>RCP</p>
+                                        </div>
+                                        <div class="menu-price">
+                                             <span>$30</span>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+
+               </div>
+          </div>
+     </section>
+
+
+     <div class ="row" style="margin: 5% 0;">
+                    <div class="col-md-12 col-sm-12">
+                      <div class ='four'>
+                        <div class = 'text'>
+                              <h1 style="margin-left:-">Our Collections:</h1>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Books</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Committee Records</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Correspondence</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Domestic Manuals</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Grants, Charters,Statutes</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Illustrations, Sketches</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Journals</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Manuscripts</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Maps,Drawings</h3> 
+                              </div>  
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Personal Papers</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Medical Textbooks</h3> 
+                              </div>
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Physical Artifacts</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Proceedings</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3> Reports</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Treatment Records</h3> 
+                              </div>  
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Questionnaires</h3> 
+                              </div> 
+                              <div class="col-md-4 col-sm-12">
+                                <h3>Incunabula</h3> 
+                              </div>                       
+                        </div>
+                      </div>
+                    </div> 
+     </div>
+
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class ='three'>
+            <div class = 'text'>
+                 <h1>Our Board:</h1>   
+                              
+                <div class="col-md-12 col-sm-12">
+                    <p><span>Tilli Tansey</span>, OBE, Emeritus Professor of the History of Modern Medical Sciences (QMUL), world-leading medical historian and Honorary Archivist at The Physiological Society, Honorary Fellow of the Royal Society of Medicine, Honorary Fellow at the Royal College of Physicians</p> 
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <p><span>Jacob Steere-Williams</span>, Assoc. Professor, Department of History, Director, Public Health B.A., College of Charleston and Book Reviews Editor, Journal of the History of Medicine and Allied Sciences</p> 
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <p><span> Pamela Forde</span>, Archive Manager, at Royal College of Physicians</p> 
+                </div>
+                <div class="col-md-12 col-sm-12">
+                     <p><span>Katie Birkwood</span>, Rare Books and Special Collections Librarian at Royal College of Physicians</p> 
+                </div>                       
+            </div>
+        </div>
+      </div>
+    </div>  
+
+       <!- - Features - ->
+     <section id="about" data-stellar-background-ratio="0.5" style = "padding-bottom:10%;">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-info">
+                              <div class="section-title " data-wow-delay="">
+                                   <h4>Read our story</h4>
+                                   <br><br><h2>Create Engaging <br> Content Hubs </h2>
+                              </div>
+
+                              <div class="" data-wow-delay="">
+                                   <p>Increase engagement with a content experience your audience will love. Content Hubs keep your content fresh, organized, and easily discoverable.</p><br>
+                                    <!-- <span class ="sayan"><a href="#home" target="_parent">Learn more</a>.</p><span> -->
+                                   <a href="#footer" class="section-btn-next">Learn More</a><br><br>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-image" data-wow-delay="">
+                              <img src="images/testimonial-bg1.jpg" style ="height:400px" class="img-responsive" alt="">
+                  <!-- i frmae has issues with responsiveness  -->           
+                              <!-- <iframe width="560" height="400" src="https://www.youtube.com/embed/fZxgOddjGlk?showinfo = 0 controls = 0 autohide = 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>  
+
+     <div class = "module-gradient-callout theme-flat">  
+               <div class = "container">
+                    <div class = "row">
+                         <div class ="col-12">
+                         <span class ="title"> Learn How to Power Your Research With Digital Archives! </span>
+                         </div>
+                         <a href="contact.html" class="section-btn-next request">Request a Demo</a>
+                    </div>
+               </div>
+          </div>
+
+
+
+     <!- - FOOTER - ->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>123 nulla a cursus rhoncus,<br> augue sem viverra 10870<br>id ultricies sapien</p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Talk to a representative</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>090-080-0650 | 090-070-0430</p>
+                                   <p><a href="mailto:info@company.com">info@company.com</a></p>
+                                   <p>LINE: Wiley247 </p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-8">
+                         <div class="footer-info footer-open-hour">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">office hours</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Monday: Closed</p>
+                                   <div>
+                                        <strong>Tuesday to Friday</strong>
+                                        <p>7:00 AM - 9:00 PM</p>
+                                   </div>
+                                   <div>
+                                        <strong>Saturday - Sunday</strong>
+                                        <p>11:00 AM - 10:00 PM</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4">
+                         <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                         </ul>
+
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                              <p><br>Copyright &copy; 2018 <br>John Wiley & Son's
+                              
+                              <br><br>Design: <a rel="nofollow" href="http://shoaibahamed.com" target="_parent">Demand Gen web team</a></p>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+       <!- - SCRIPTS - ->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+</body>
+</html>
